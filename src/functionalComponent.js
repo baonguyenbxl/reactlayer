@@ -20,6 +20,11 @@ const jsxs = {
         key: 0
     }
 }
+
+export function getJsx ()
+{
+
+}
 export const configs = {
     separator: ">",
     idGenerator: ( length = 30 ) =>
