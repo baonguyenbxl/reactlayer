@@ -50,14 +50,13 @@ export function Jsx ()
 
 export function ImageDiv(props)
 {
-    let key = (props && props.key)? props.key:"",
-        valeur = (props && props.valeur)?props.valeur: "",
-        keyclass = ( props && props.keyclass ) ? props.keyclass : "",
+    let field = ( props && props.field ) ? props.field : "",
+        valeur = ( props && props.valeur ) ? props.valeur : "",
+        fieldclass = ( props && props.fieldclass ) ? props.fieldclass : "",
         valeurclass = ( props && props.valeurclass ) ? props.valeurclass : "",
         divclass = ( props && props.divclass ) ? props.divclass : "",
         onclick = ( props && props.onlick ) ? props.onclick : undefined,
         onchange = ( props && props.onchange ) ? props.onchange : undefined,
-        jsx = ( <></> );
-    jsx = ( <div className={ divclass }><label className={keyclass}>{key}</label><img className={ valeurclass } src={valeur} alt={key} /></div>)
+        jsx = ( <div className={ divclass }><label className={ fieldclass }>{ field }</label><img className={ valeurclass } src={ valeur } alt={ field } /></div> );
     return jsx;
 }
