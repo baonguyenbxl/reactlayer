@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import {ImageDiv,InputDiv} from './functionalComponent';
+import {ImageDiv,InputDiv,PasswordDiv} from './functionalComponent';
 
 const data = {
   findmeforjob: {
@@ -26,6 +26,7 @@ function App() {
       <InputDiv valeur={ texte } cbOnChange={ setTexte } field="test" />
       <InputDiv valeur={ texte2 } cbOnChange={ setTexte2 } field="test2" />
       <InputDiv valeur={ texte3 } cbOnChange={ setTexte3 } field="test3" />
+      <PasswordDiv valeur={texte2} cbOnChange={setTexte2} />
       <button onClick={()=>{console.log({papa:texte,filsa:texte2,filsb:texte3})}}>Click me</button>
       <label>{ texte }</label><br />
       <label>{ texte2 }</label><br />
