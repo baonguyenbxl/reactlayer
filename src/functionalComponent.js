@@ -18,11 +18,7 @@ const jsxs = {
         key: 0
     }
 }
-
-export function getJsx ()
-{
-
-}
+// eslint-disable-next-line
 export const configs = {
     separator: ">",
     idGenerator: ( length = 30 ) =>
@@ -35,14 +31,6 @@ export const configs = {
         }
         return str;
     }
-}
-export function Component ( props )
-{
-
-}
-export function Jsx ()
-{
-
 }
 
 export function findPath ( ob, key, sep=">" )
