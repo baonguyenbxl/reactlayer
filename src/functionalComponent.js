@@ -1,6 +1,4 @@
-import React from "react";
-import { ReactDOM } from "react-dom/client";
-
+// eslint-disable-next-line
 const jsxs = {
     "HFUHGJcgcgfcDYDYGFDKH": {
         tag: "div",
@@ -47,16 +45,65 @@ export function Jsx ()
 
 }
 
+export function findPath ( ob, key, sep=">" )
+{
+    const path = [];
+    const keyExists = ( obj ) =>
+    {
+        if ( !obj || ( typeof obj !== "object" && !Array.isArray( obj ) ) )
+        {
+            return false;
+        }
+        else if ( obj.hasOwnProperty( key ) )
+        {
+            return true;
+        }
+        else if ( Array.isArray( obj ) )
+        {
+            let parentKey = path.length ? path.pop() : "";
+
+            for ( let i = 0; i < obj.length; i++ )
+            {
+                path.push( `${parentKey}[${i}]` );
+                const result = keyExists( obj[ i ], key );
+                if ( result )
+                {
+                    return result;
+                }
+                path.pop();
+            }
+        }
+        else
+        {
+            for ( const k in obj )
+            {
+                path.push( k );
+                const result = keyExists( obj[ k ], key );
+                if ( result )
+                {
+                    return result;
+                }
+                path.pop();
+            }
+        }
+        return false;
+    };
+
+    keyExists( ob );
+
+    return path.join( sep );
+}
 
 export function ImageDiv(props)
 {
-    let field = ( props && props.field ) ? props.field : "",
-        valeur = ( props && props.valeur ) ? props.valeur : "",
-        fieldclass = ( props && props.fieldclass ) ? props.fieldclass : "",
-        valeurclass = ( props && props.valeurclass ) ? props.valeurclass : "",
-        divclass = ( props && props.divclass ) ? props.divclass : "",
-        onclick = ( props && props.onlick ) ? props.onclick : undefined,
-        onchange = ( props && props.onchange ) ? props.onchange : undefined,
-        jsx = ( <div className={ divclass }><label className={ fieldclass }>{ field }</label><img className={ valeurclass } src={ valeur } alt={ field } /></div> );
+    // eslint-disable-next-line
+    let jsx = ( <div className={ ( props && props.divclass ) ? props.divclass : "" }><img className={ ( props && props.valeurclass ) ? props.valeurclass : "" } src={ ( props && props.valeur ) ? props.valeur : "" } alt={ ( props && props.field ) ? props.field : "" } /></div> );
+    return jsx;
+}
+
+export function InputDiv ( props )
+{
+    // eslint-disable-next-line
+    let jsx = ( <div className={ ( props && props.divclass ) ? props.divclass : "" }><input type="text" className={ ( props && props.valeurclass ) ? props.valeurclass : "" }  value={ ( props && props.valeur ) ? props.valeur : "" } onChange={ ( e ) => { ( props && props.cbOnChange ) ? props.cbOnChange(e.target.value) : undefined } } /></div> );
     return jsx;
 }
