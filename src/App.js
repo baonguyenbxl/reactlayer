@@ -94,7 +94,13 @@ function App ()
         <InputDiv valeur={ texte2 } cbOnChange={ setTexte2 } field="test2" />
         <InputDiv valeur={ texte3 } cbOnChange={ setTexte3 } field="test3" />
       </div>
-    </div></div> );
+    </div>
+    <div className="rowbottom">
+      <div className="botcolumna"></div>
+      <div className="botcolumnb" style={ { backgroundColor: themes.lightBlue.rowTop } }>Policies  | Conditions | Legacy</div>
+      <div className="botcolumna"></div>
+    </div>
+  </div> );
   return jsx;
 }
 
