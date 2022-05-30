@@ -106,7 +106,7 @@ export function PasswordDiv ( props )
 export function TexteDiv ( props )
 {
     // eslint-disable-next-line
-    let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick() : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><label className={ ( props && props.valeurclass ) ? props.valeurclass : "" }>{ ( props && props.valeur ) ? props.valeur : "" }</label></div> )
+    let jsx = ( props && props.valeurLink ) ? ( <div className={ ( props && props.divclass ) ? props.divclass : "" }><a href={ props && props.valeurLink } target={ ( props && props.valeurTarget ) ? props.valeurTarget : "" } className={ ( props && props.valeurclass ) ? props.valeurclass : "" }>{ ( props && props.valeur ) ? props.valeur : "" }</a></div> ) : ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick() : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><label className={ ( props && props.valeurclass ) ? props.valeurclass : "" }>{ ( props && props.valeur ) ? props.valeur : "" }</label></div> );
     return jsx;
 }
 
