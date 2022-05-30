@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  background-image: url("https://toppng.com/uploads/preview/this-free-icons-png-design-of-binary-code-wave-11563250476wlkwixh7b1.png");
+}
 /* Create four equal columns that floats next to each other */
 .columna {
   float: left;
