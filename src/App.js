@@ -97,7 +97,7 @@ function App ()
     </div>
     <div className="rowbottom">
       <div className="botcolumna"></div>
-      <div className="botcolumnb" style={ { backgroundColor: themes.lightBlue.rowTop } }>Policies  | Conditions | Legacy</div>
+      <div className="botcolumnb" style={ { backgroundColor: themes.lightBlue.rowTop } }>Policies  | Conditions | Legacy | easign.io  <i style={ { fontSize: "12px" } } className="fa">&#xf1f9;</i> </div>
       <div className="botcolumna"></div>
     </div>
   </div> );
