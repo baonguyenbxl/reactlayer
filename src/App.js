@@ -22,8 +22,8 @@ const themes = {
     columnc: "#ADD8E6",
     boxa: "#ADD8E6",
     boxb: "",
-    boxc:"",
-    boxd:""
+    boxc: "",
+    boxd: ""
   }
 }
 
@@ -35,27 +35,54 @@ function App ()
   const [ texte2, setTexte2 ] = useState( data.texte.test2 );
   const [ texte3, setTexte3 ] = useState( data.texte.test3 );
   // eslint-disable-next-line
-  const jsx = ( <div className="maindiv"><div className="rowtop" style={ { backgroundColor: themes.lightBlue.rowTop } }><div className="topa"></div><div className="topb"><img src={ Easign } alt="EASIGN.io" className="logoimg" /></div><div className="topa"></div></div><div className="rowmain">
-    <div className="columna" style={ { backgroundColor: themes.lightBlue.columna } }>
-      <ImageDiv valeur={ data.findmeforjob.fmfj } field="fmfj" />
-      <InputDiv valeur={ texte } cbOnChange={ setTexte } field="test" />
-      <PasswordDiv valeur={ texte2 } cbOnChange={ setTexte2 } />
-      <button onClick={ () => { console.log( { papa: texte, filsa: texte2, filsb: texte3 } ) } }>Click me</button>
+  const jsx = ( <div className="maindiv">
+    <div className="rowtop" style={ { backgroundColor: themes.lightBlue.rowTop } }>
+      <div className="topa"></div>
+      <div className="topb">
+        <img src={ Easign } alt="EASIGN.io" className="logoimg" />
+      </div>
+      <div className="topb">
+        <b><i className="fa">&#xf015;</i><br />
+          <label>Home</label></b>
+      </div>
+      <div className="topb">
+        <b><i className="fa">&#xf0c0;</i><br />
+          <label>About Us</label></b>
+      </div>
+      <div className="topb"><b>
+        <i className="fa">&#xf1c9;</i><br />
+        <label>Our Project</label></b>
+      </div>
+      <div className="topb"><b>
+        <i className="fa">&#xf2bc;</i><br />
+        <label>3D resume</label></b>
+      </div>
+      <div className="topb"><b>
+        <i className="fa">&#xf1fa;</i><br />
+        <label>Contact</label></b>
+      </div>
+      <div className="topa">
+      </div>
     </div>
-    <div className="columnb" style={ { backgroundColor: themes.lightBlue.columnb } }>
-      <DateDiv />
-
-      <TexteDiv valeurLink={ data.findmeforjob.fmfj } valeurTarget="_blank" valeur={ texte } />
-
-      <label>{ texte }</label><br />
-      <label>{ texte2 }</label><br />
-      <label>{ texte3 }</label><br />
-    </div>
-    <div className="columna" style={ { backgroundColor: themes.lightBlue.columnc } }>
-      <InputDiv valeur={ texte2 } cbOnChange={ setTexte2 } field="test2" />
-      <InputDiv valeur={ texte3 } cbOnChange={ setTexte3 } field="test3" />
-    </div>
-  </div></div> );
+    <div className="rowmain">
+      <div className="columna" style={ { backgroundColor: themes.lightBlue.columna } }>
+        <ImageDiv valeur={ data.findmeforjob.fmfj } field="fmfj" />
+        <InputDiv valeur={ texte } cbOnChange={ setTexte } field="test" />
+        <PasswordDiv valeur={ texte2 } cbOnChange={ setTexte2 } />
+        <button onClick={ () => { console.log( { papa: texte, filsa: texte2, filsb: texte3 } ) } }>Click me</button>
+      </div>
+      <div className="columnb" style={ { backgroundColor: themes.lightBlue.columnb } }>
+        <DateDiv />
+        <TexteDiv valeurLink={ data.findmeforjob.fmfj } valeurTarget="_blank" valeur={ texte } />
+        <label>{ texte }</label><br />
+        <label>{ texte2 }</label><br />
+        <label>{ texte3 }</label><br />
+      </div>
+      <div className="columna" style={ { backgroundColor: themes.lightBlue.columnc } }>
+        <InputDiv valeur={ texte2 } cbOnChange={ setTexte2 } field="test2" />
+        <InputDiv valeur={ texte3 } cbOnChange={ setTexte3 } field="test3" />
+      </div>
+    </div></div> );
   return jsx;
 }
 

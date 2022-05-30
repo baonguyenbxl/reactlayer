@@ -17,7 +17,7 @@
   float: left;
   width: 48%;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 2%;
   margin-right: 2%;
   border-radius: 5px;
@@ -25,8 +25,8 @@
 }
 .logoimg {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 .maindiv {
 width: 100%;
@@ -39,8 +39,16 @@ width: 100%;
 }
 .topb {
     float: left;
-  width: 60%;
+  width: 10%;
   padding: 2px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.topb:hover {
+  color: black;
+  cursor:pointer;
 }
 /* Clear floats after the columns */
 .rowmain:after {
@@ -70,10 +78,10 @@ width: 100%;
   	width:63%;
   }
   .topa {
-    width:10%;
+    width:11%;
   }
   .topb {
-    width:80%;
+    width:13%;
   }
 }
 
