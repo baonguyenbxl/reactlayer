@@ -13,11 +13,19 @@
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+.searchbox {
+  text-align:right;
+  width:150px;
+  height:40px;
+  border-radius:5px;
+  margin-right: 10px;
+}
+
 .columnb {
   float: left;
   width: 48%;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 2%;
   margin-right: 2%;
   border-radius: 5px;
@@ -25,25 +33,42 @@
 }
 .logoimg {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 180px;
 }
 .maindiv {
 width: 100%;
 }
 .topa {
   float: left;
-  width: 20%;
-  
+  width: 10%;
   padding: 2px;
 }
 .topb {
-    float: left;
-  width: 10%;
+  float: left;
+  width: 6%;
   padding: 2px;
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.topc {
+  float: left;
+  width: 16%;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin-top: 0px;
+}
+.topd {
+    float: left;
+  width: 16%;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
   margin-top: 20px;
 }
 .topb:hover {
@@ -67,6 +92,10 @@ width: 100%;
   content: "";
   display: table;
   clear: both;
+}
+.fa {
+  font-size: 35px;
+  margin-top: 3px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

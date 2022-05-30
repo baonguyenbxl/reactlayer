@@ -38,7 +38,7 @@ function App ()
   const jsx = ( <div className="maindiv">
     <div className="rowtop" style={ { backgroundColor: themes.lightBlue.rowTop } }>
       <div className="topa"></div>
-      <div className="topb">
+      <div className="topc">
         <img src={ Easign } alt="EASIGN.io" className="logoimg" />
       </div>
       <div className="topb">
@@ -57,10 +57,22 @@ function App ()
         <i className="fa">&#xf2bc;</i><br />
         <label>3D resume</label></b>
       </div>
+      <div className="topb">
+        <b><i className="fa">&#xf06e;</i><br />
+          <label>Our vision</label></b>
+      </div>
+      <div className="topb">
+        <b><i className="fa">&#xf2b5;</i><br />
+          <label>Partners</label></b></div>
       <div className="topb"><b>
         <i className="fa">&#xf1fa;</i><br />
         <label>Contact</label></b>
       </div>
+      <div className="topb">
+        <b>
+          <i className="fa">&#xf079;</i><br />
+          <label>Developper</label></b></div>
+      <div className="topd"><input type="text" placeholder="Search" className="searchbox" id="search" /><i className="fa">&#xf002;</i></div>
       <div className="topa">
       </div>
     </div>
