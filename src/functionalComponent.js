@@ -85,27 +85,34 @@ export function findPath ( ob, key, sep=">" )
 export function ImageDiv(props)
 {
     // eslint-disable-next-line
-    let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick( e.target.value ) : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><img className={ ( props && props.valeurclass ) ? props.valeurclass : "" } src={ ( props && props.valeur ) ? props.valeur : "" } alt={ ( props && props.field ) ? props.field : "" } /></div> );
+    let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick() : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><img className={ ( props && props.valeurclass ) ? props.valeurclass : "" } src={ ( props && props.valeur ) ? props.valeur : "" } alt={ ( props && props.field ) ? props.field : "" } /></div> );
     return jsx;
 }
 
 export function InputDiv ( props )
 {
     // eslint-disable-next-line
-    let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick( e.target.value ) : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><input type="text" className={ ( props && props.valeurclass ) ? props.valeurclass : "" } value={ ( props && props.valeur ) ? props.valeur : "" } onChange={ ( e ) => { ( props && props.cbOnChange ) ? props.cbOnChange( e.target.value ) : undefined } } /></div> );
+    let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick() : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><input type="text" className={ ( props && props.valeurclass ) ? props.valeurclass : "" } value={ ( props && props.valeur ) ? props.valeur : "" } onChange={ ( e ) => { ( props && props.cbOnChange ) ? props.cbOnChange( e.target.value ) : undefined } } /></div> );
     return jsx;
 }
 
 export function PasswordDiv ( props )
 {
     // eslint-disable-next-line
-    let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick( e.target.value ) : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><input type="password" className={ ( props && props.valeurclass ) ? props.valeurclass : "" } value={ ( props && props.valeur ) ? props.valeur : "" } onChange={ ( e ) => { ( props && props.cbOnChange ) ? props.cbOnChange( e.target.value ) : undefined } } /></div> );
+    let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick() : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><input type="password" className={ ( props && props.valeurclass ) ? props.valeurclass : "" } value={ ( props && props.valeur ) ? props.valeur : "" } onChange={ ( e ) => { ( props && props.cbOnChange ) ? props.cbOnChange( e.target.value ) : undefined } } /></div> );
     return jsx;
 }
 
 export function TexteDiv ( props )
 {
     // eslint-disable-next-line
-    let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick( e.target.value ) : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><label className={ ( props && props.valeurclass ) ? props.valeurclass : "" }>{ ( props && props.valeur ) ? props.valeur : "" }</label></div> )
+    let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick() : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><label className={ ( props && props.valeurclass ) ? props.valeurclass : "" }>{ ( props && props.valeur ) ? props.valeur : "" }</label></div> )
+    return jsx;
+}
+
+export function DateDiv ( props )
+{
+    // eslint-disable-next-line
+    let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick() : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><input type="date" className={ ( props && props.valeurclass ) ? props.valeurclass : "" } value={ ( props && props.valeur ) ? props.valeur : "" } onChange={ ( e ) => { ( props && props.cbOnChange ) ? props.cbOnChange( e.target.value ) : undefined } } /></div> );
     return jsx;
 }
