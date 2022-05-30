@@ -5,17 +5,52 @@
 /* Create four equal columns that floats next to each other */
 .columna {
   float: left;
-  width: 25%;
+  width: 20%;
   padding: 10px;
-}
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+  }
 .columnb {
   float: left;
-  width: 50%;
+  width: 55%;
   padding: 10px;
+    margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 5px;
 }
-
+.logoimg {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.maindiv {
+width: 100%;
+}
+.topa {
+  float: left;
+  width: 20%;
+  padding: 2px;
+}
+.topb {
+    float: left;
+  width: 60%;
+  padding: 2px;
+}
 /* Clear floats after the columns */
 .rowmain:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rowtop {
+  width:100%;
+  float: left;
+  height: 100px;
+    padding: 0px;
+}
+.rowtop:after {
   content: "";
   display: table;
   clear: both;
@@ -28,6 +63,12 @@
   }
   .columnb {
   	width:66%;
+  }
+  .topa {
+    width:10%;
+  }
+  .topb {
+    width:80%;
   }
 }
 
