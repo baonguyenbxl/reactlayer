@@ -111,6 +111,10 @@ width: 100%;
   display: table;
   clear: both;
 }
+.image1 {
+  max-width: 200px;
+  max-height: 150px;
+}
 .rowbottom {
   width:100%;
   margin-top: 20px;

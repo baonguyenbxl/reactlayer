@@ -1,7 +1,10 @@
+// eslint-disable-next-line
 import './App.css';
 import { useState } from 'react';
+// eslint-disable-next-line
 import { ImageDiv, InputDiv, PasswordDiv, DateDiv, TexteDiv } from './functionalComponent';
 import Easign from './easign.svg';
+import Youtube from './Youtube';
 const data = {
   findmeforjob: {
     fmfj: "https://ico.findmeforjob.com/assets/img/logo/logo.png"
@@ -31,9 +34,12 @@ const themes = {
 
 function App ()
 {
-  const [ texte, setTexte ] = useState( data.texte.test );
-  const [ texte2, setTexte2 ] = useState( data.texte.test2 );
-  const [ texte3, setTexte3 ] = useState( data.texte.test3 );
+  // eslint-disable-next-line
+  const [ texte, setTexte ] = useState( data.texte.test ),
+    // eslint-disable-next-line
+    [ texte2, setTexte2 ] = useState( data.texte.test2 ),
+    // eslint-disable-next-line
+    [ texte3, setTexte3 ] = useState( data.texte.test3 );
   // eslint-disable-next-line
   const jsx = ( <div className="maindiv">
     <div className="rowtop" style={ { backgroundColor: themes.lightBlue.rowTop } }>
@@ -78,21 +84,18 @@ function App ()
     </div>
     <div className="rowmain">
       <div className="columna" style={ { backgroundColor: themes.lightBlue.columna } }>
-        <div style={ { marginTop: "40px"}}></div>
-        <InputDiv valeur={ texte } cbOnChange={ setTexte } field="test" />
-        <PasswordDiv valeur={ texte2 } cbOnChange={ setTexte2 } />
-        <button onClick={ () => { console.log( { papa: texte, filsa: texte2, filsb: texte3 } ) } }>Click me</button>
+        <div style={ { marginTop: "40px" } }></div>
+        <TexteDiv valeur="Party A" />
+        <ImageDiv valeur="https://media.istockphoto.com/photos/terms-and-conditions-text-in-legal-agreement-or-document-about-or-picture-id1033774358" field="contract" valeurclass="image1" />
       </div>
       <div className="columnb" style={ { backgroundColor: themes.lightBlue.columnb } }>
-        <DateDiv />
-        <TexteDiv valeurLink={ data.findmeforjob.fmfj } valeurTarget="_blank" valeur={ texte } />
-        <label>{ texte }</label><br />
-        <label>{ texte2 }</label><br />
-        <label>{ texte3 }</label><br />
+        <Youtube embedId="hxCFn_-aVlc" /><br/>
+        <Youtube embedId="8VJlKOUkUqc" /><br />
+        <Youtube embedId="_I0dUL4kpTg" /><br />
       </div>
       <div className="columnc" style={ { backgroundColor: themes.lightBlue.columnc } }>
-        <InputDiv valeur={ texte2 } cbOnChange={ setTexte2 } field="test2" />
-        <InputDiv valeur={ texte3 } cbOnChange={ setTexte3 } field="test3" />
+        <TexteDiv valeur="Party B" />
+
       </div>
     </div>
     <div className="rowbottom">
