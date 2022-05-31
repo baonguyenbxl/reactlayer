@@ -85,8 +85,15 @@ function App ()
     <div className="rowmain">
       <div className="columna" style={ { backgroundColor: themes.lightBlue.columna } }>
         <div style={ { marginTop: "40px" } }></div>
-        <TexteDiv valeur="Party A" />
+        <TexteDiv valeur="Party A" /><br />
         <ImageDiv valeur="https://media.istockphoto.com/photos/terms-and-conditions-text-in-legal-agreement-or-document-about-or-picture-id1033774358" field="contract" valeurclass="image1" />
+        <br />
+        <ImageDiv valeur="https://bilis.com/wp-content/uploads/2016/02/traduction-contrat-1500.jpg" field="contract" valeurclass="image1" />
+        <br />
+        <ImageDiv valeur="https://930633.smushcdn.com/2388590/wp-content/uploads/2021/03/Signature-electronique.png?lossy=1&strip=1&webp=1" field="contract" valeurclass="image1" />
+        <br />
+        <ImageDiv valeur="https://invao.org/wp-content/uploads/2020/03/invao-blogartikel-digitalisierung-1366x768px.jpg" field="contract" valeurclass="image1" />
+        <br />
       </div>
       <div className="columnb" style={ { backgroundColor: themes.lightBlue.columnb } }>
         <Youtube embedId="hxCFn_-aVlc" /><br/>
@@ -94,8 +101,16 @@ function App ()
         <Youtube embedId="_I0dUL4kpTg" /><br />
       </div>
       <div className="columnc" style={ { backgroundColor: themes.lightBlue.columnc } }>
-        <TexteDiv valeur="Party B" />
-
+        <div style={ { marginTop: "40px" } }></div>
+        <TexteDiv valeur="Party B" /><br />
+        <ImageDiv valeur="https://www.logic-immo.com/resources/img/seller/article/conditions-suspensives-desktop.jpg" field="contract" valeurclass="image1" />
+        <br />
+        <ImageDiv valeur="https://bilis.com/wp-content/uploads/2016/02/traduction-contrat-1500.jpg" field="contract" valeurclass="image1" />
+        <br />
+        <ImageDiv valeur="https://f.hellowork.com/blogdumoderateur/2017/07/online-signature2-1-612x366.jpg" field="contract" valeurclass="image1" />
+        <br />
+        <ImageDiv valeur="https://www.finder.com/finder-us/wp-uploads/2018/07/blockchain-large.jpg?fit=2214" field="contract" valeurclass="image1" />
+        <br />
       </div>
     </div>
     <div className="rowbottom">
