@@ -53,6 +53,7 @@ body {
   position: relative;
   width: 200px;
   height: 180px;
+  align-self: flex-end;
 }
 .maindiv {
 width: 100%;
