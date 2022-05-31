@@ -72,13 +72,13 @@ function App ()
         <b>
           <i className="fa">&#xf079;</i><br />
           <label>Developper</label></b></div>
-      <div className="topd"><input type="text" placeholder="Search" className="searchbox" id="search" /><i className="fa">&#xf002;</i></div>
+      <div className="topd"><input type="text" placeholder="Search" className="searchbox" id="search" /></div>
       <div className="topa">
       </div>
     </div>
     <div className="rowmain">
       <div className="columna" style={ { backgroundColor: themes.lightBlue.columna } }>
-        <ImageDiv valeur={ data.findmeforjob.fmfj } field="fmfj" />
+        <div style={ { marginTop: "40px"}}></div>
         <InputDiv valeur={ texte } cbOnChange={ setTexte } field="test" />
         <PasswordDiv valeur={ texte2 } cbOnChange={ setTexte2 } />
         <button onClick={ () => { console.log( { papa: texte, filsa: texte2, filsb: texte3 } ) } }>Click me</button>
@@ -90,7 +90,7 @@ function App ()
         <label>{ texte2 }</label><br />
         <label>{ texte3 }</label><br />
       </div>
-      <div className="columna" style={ { backgroundColor: themes.lightBlue.columnc } }>
+      <div className="columnc" style={ { backgroundColor: themes.lightBlue.columnc } }>
         <InputDiv valeur={ texte2 } cbOnChange={ setTexte2 } field="test2" />
         <InputDiv valeur={ texte3 } cbOnChange={ setTexte3 } field="test3" />
       </div>
