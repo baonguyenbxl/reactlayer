@@ -290,7 +290,7 @@ function VideoTexte ( props )
 // eslint-disable-next-line
 function Home ( props )
 {
-  let jsx = ( <div className="columnb" style={ { backgroundColor: themes.lightBlue.columnb } }>{ columncenter.map( ( d, i ) => <React.Fragment key={ i }><VideoTexte { ...d } /><div style={ { marginTop: "40px" } }></div></React.Fragment>)}
+  let jsx = ( <div className="columnb" style={ { backgroundColor: themes.lightBlue.columnb } }>{ columncenter.map( ( d, i ) => <React.Fragment key={ i }><VideoTexte { ...d } /><br /><div style={ { height: "40px" } }></div></React.Fragment>)}
   </div> );
   return jsx;
 }
@@ -355,7 +355,7 @@ function App ()
   const [ columna, setColumna ] = useState( <div className="columna" style={ { backgroundColor: themes.lightBlue.columna } }>
     <div style={ { marginTop: "40px" } }></div>
     <TexteDiv valeur="Party A" /><br />
-    { partya.map( ( d, i ) => <React.Fragment key={ i } ><ImageTexte { ...d } /><div style={ { marginTop: "10px" } }></div></React.Fragment>)}
+    { partya.map( ( d, i ) => <React.Fragment key={ i } ><ImageTexte { ...d } /><br/><div style={ { height: "10px" } }></div></React.Fragment>)}
   </div> );
     // eslint-disable-next-line
   const [ columnb, setColumnb ] = useState( <Home /> );
@@ -363,7 +363,7 @@ function App ()
   const [ columnc, setColumnc ] = useState( <div className="columnc" style={ { backgroundColor: themes.lightBlue.columnc } }>
       <div style={ { marginTop: "40px" } }></div>
       <TexteDiv valeur="Party B" /><br />
-    { partyb.map( ( d, i ) => <React.Fragment key={ i } ><ImageTexte { ...d } /><div style={ { marginTop: "40px" } }></div></React.Fragment>)}
+    { partyb.map( ( d, i ) => <React.Fragment key={ i } ><ImageTexte { ...d } /><br /><div style={ { height: "40px" } }></div></React.Fragment>)}
   </div> );
   // eslint-disable-next-line
   const [ bottoma, setBottoma ] = useState( <div className="botcolumna"></div> );
