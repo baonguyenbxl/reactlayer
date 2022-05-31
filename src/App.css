@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
 }
-body {
-  background-image: url("");
-}
+
 /* Create four equal columns that floats next to each other */
 .columna {
   float: left;
@@ -25,7 +23,33 @@ body {
   border: none;
   float:left;
 }
-
+.containerClass {
+  width: 100%;
+  max-height: 170px;
+  margin: 5px;
+}
+.divImageClass{
+  float:left;
+  width: 60%;
+}
+.texteClass {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.divTexteClass {
+    float:left;
+  width: 40%;
+padding: 10px;
+}
+.imageClass {
+  width:100%;
+  height: inherit;
+  position: inherit;
+}
+.divVideoClass {
+  width: 60%;
+  float:left;
+}
 .columnb {
   float: left;
   width: 44%;
