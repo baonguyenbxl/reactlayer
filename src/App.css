@@ -38,7 +38,7 @@
 }
 .divTexteClass {
     float:left;
-  width: 40%;
+  width: 35%;
 padding: 10px;
 }
 .imageClass {
@@ -50,6 +50,7 @@ padding: 10px;
 .divVideoClass {
   width: 60%;
   float:left;
+  margin: 10px;
 }
 .columnb {
   float: left;
