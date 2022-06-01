@@ -116,7 +116,7 @@ width: 100%;
   margin-top: 20px;
 }
 .topb:hover {
-  color: #4169E1;
+  text-decoration-color: lightblue;
   cursor:pointer;
 }
 /* Clear floats after the columns */
@@ -129,8 +129,10 @@ width: 100%;
 .rowtop {
   width:100%;
   float: left;
-  height: 100px;
+  height: 70px;
     padding: 0px;
+    background-image: url("./images/backgroundtop.jpg");
+    background-repeat: repeat-x;
 }
 .rowtop:after {
   content: "";

@@ -5,7 +5,8 @@ import React, { useState } from 'react';
 import { ImageDiv, InputDiv, PasswordDiv, DateDiv, TexteDiv } from './functionalComponent';
 import Easign from './easign.svg';
 import Youtube from './Youtube';
-
+// eslint-disable-next-line
+import BackImg from './images/backgroundtop.jpg'
 
 const themes = {
   lightBlue: {
@@ -372,50 +373,43 @@ function App ()
   // eslint-disable-next-line
   const [ bottomc, setBottomc ] = useState( <div className="botcolumna"></div> );
   // eslint-disable-next-line
-  const [ rowTop, setRowTop ] = useState( <div className="rowtop" style={ { backgroundColor: themes.lightBlue.rowTop } }>
+  const [ rowTop, setRowTop ] = useState( <div className="rowtop">
     <div className="topa">
     </div>
     <div className="topc">
       <img src={ Easign } alt="EASIGN.io" className="logoimg" />
     </div>
-    <div className="topb" onClick={ () => { setColumnb( <Home /> ) } }>
-      <b>
+    <div className="topb" onClick={ () => { setColumnb( <Home /> ) } }>      
         <i className="fa">&#xf015;</i><br />
         <label>Home</label>
-      </b>
     </div>
     <div className="topb" onClick={ () => { setColumnb( <AboutUs /> ) } }>
-      <b>
         <i className="fa">&#xf0c0;</i><br />
         <label>About Us</label>
-      </b>
     </div>
     <div className="topb" onClick={ () => { setColumnb( <Projects /> ) } }>
-      <b>
         <i className="fa">&#xf1c9;</i><br />
         <label>Our Projects</label>
-      </b>
     </div>
-    <div className="topb" onClick={ () => { setColumnb( <CV3D /> ) } }><b>
+    <div className="topb" onClick={ () => { setColumnb( <CV3D /> ) } }>
       <i className="fa">&#xf2bc;</i><br />
-      <label>3D resume</label></b>
+      <label>3D resume</label>
     </div>
     <div className="topb" onClick={ () => { setColumnb( <OurVision /> ) } }>
-      <b><i className="fa">&#xf06e;</i><br />
-        <label>Our vision</label></b>
+      <i className="fa">&#xf06e;</i><br />
+        <label>Our vision</label>
     </div>
     <div className="topb" onClick={ () => { setColumnb( <Partners /> ) } }>
-      <b><i className="fa">&#xf2b5;</i><br />
-        <label>Partners</label></b>
+      <i className="fa">&#xf2b5;</i><br />
+        <label>Partners</label>
     </div>
-    <div className="topb" onClick={ () => { setColumnb( <Contact /> ) } }><b>
+    <div className="topb" onClick={ () => { setColumnb( <Contact /> ) } }>
       <i className="fa">&#xf1fa;</i><br />
-      <label>Contact</label></b>
+      <label>Contact</label>
     </div>
     <div className="topb" onClick={ () => { setColumnb( <Developers /> ) } }>
-      <b>
         <i className="fa">&#xf079;</i><br />
-        <label>Developers</label></b>
+        <label>Developers</label>
     </div>
     <div className="topd"><input type="text" placeholder="Search" className="searchbox" id="search" /></div>
     <div className="topa">
