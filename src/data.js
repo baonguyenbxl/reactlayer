@@ -163,12 +163,12 @@ export const columncenter = [
     {
         texte: "The blockchain offers the best security for your data & privacy. Immutable property of data offers high fiability",
         embedId: "hxCFn_-aVlc",
-        containerClass: "containerClass",
+        containerClass: "containerVideoClass",
         divVideoClass: "divVideoClass",
         videoClass: "videoClass",
         texteClass: "texteClass",
         texteLink: "",
-        divTexteClass: "divTexteClass",
+        divTexteClass: "divTexteVideoClass",
         textOnClick: () => { },
         texteTarget: "",
         texteLeft: false
@@ -176,12 +176,12 @@ export const columncenter = [
     {
         texte: "Actions are raised only when conditions are met",
         embedId: "8VJlKOUkUqc",
-        containerClass: "containerClass",
+        containerClass: "containerVideoClass",
         divVideoClass: "divVideoClass",
         videoClass: "videoClass",
         texteClass: "texteClass",
         texteLink: "",
-        divTexteClass: "divTexteClass",
+        divTexteClass: "divTexteVideoClass",
         textOnClick: () => { },
         texteTarget: "",
         texteLeft: false
@@ -189,12 +189,12 @@ export const columncenter = [
     {
         texte: "We use ricardian contract that offers human readability and scalability. Therefore, history can be traced with blockchain's trust",
         embedId: "_I0dUL4kpTg",
-        containerClass: "containerClass",
+        containerClass: "containerVideoClass",
         divVideoClass: "divVideoClass",
         videoClass: "videoClass",
         texteClass: "texteClass",
         texteLink: "",
-        divTexteClass: "divTexteClass",
+        divTexteClass: "divTexteVideoClass",
         textOnClick: () => { },
         texteTarget: "",
         texteLeft: false

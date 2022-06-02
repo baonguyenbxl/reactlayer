@@ -9,6 +9,8 @@ import { PartyA, PartyB, PartyCenter } from './App';
 // eslint-disable-next-line
 import { partya, partyb, columncenter } from './data.js'
 // eslint-disable-next-line
+import './Columns.css'
+// eslint-disable-next-line
 export function ColumnA ()
 {
     let first = useContext( PartyA );

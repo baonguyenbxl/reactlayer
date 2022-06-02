@@ -1,5 +1,6 @@
 // eslint-disable-next-line
 import Easign from './easign.svg';
+import './Rows.css';
 // eslint-disable-next-line
 import React, { useState, useEffect, useContext, createContext } from 'react';
 // eslint-disable-next-line

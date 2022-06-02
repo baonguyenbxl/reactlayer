@@ -3,27 +3,8 @@
 }
 
 /* Create four equal columns that floats next to each other */
-.columna {
-  float: left;
-  width: 16%;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 10%;
-  margin-right: 2%;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(96,205,248,1));
-  }
-.searchbox {
-  text-align:right;
-  width:100px;
-  height:30px;
-  border-radius:5px;
-  margin-right: 10px;
-  margin-top: 10px;
-  border: none;
-  float:left;
-}
+
+
 .containerClass {
   width: 100%;
   max-height: 170px;
@@ -43,40 +24,26 @@
   width: 35%;
 padding: 10px;
 }
+.divTexteVideoClass {
+    float:left;
+  width: 100%;
+padding: 0px;
+}
 .imageClass {
   width:100%;
   height: inherit;
   position: inherit;
   border-radius: 10px;
 }
+.containerVideoClass {
+  width: 90%;
+  max-height: 220px;
+  margin-left: 5%;
+}
 .divVideoClass {
-  width: 60%;
+  width: 100%;
   float:left;
-  margin: 10px;
-}
-.columnb {
-  float: left;
-  width: 44%;
-  min-height: 700px;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 0%;
-  margin-right: 0%;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(173, 221, 240));
-}
-
-.columnc {
-    float: left;
-  width: 16%;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 2%;
-  margin-right: 10%;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(96, 205, 248));
+  margin-left: 0px;
 }
 
 .logoimg {
@@ -88,141 +55,54 @@ padding: 10px;
 .maindiv {
 width: 100%;
 }
-.topa {
-  float: left;
-  width: 10%;
-  padding: 2px;
-}
-.topb {
-  float: left;
-  width: 6%;
-  padding: 2px;
-  text-align: center;
-  color: white;
-  font-size: 12px;
-  margin-top: 20px;
-}
-.topc {
-  float: left;
-  width: 16%;
-  padding: 0px;
-  text-align: center;
-  color: white;
-  font-size: 12px;
-  margin-top: 0px;
-}
-.topd {
-    float: left;
-  width: 16%;
-  padding: 0px;
-  text-align: center;
-  color: white;
-  font-size: 12px;
-  margin-top: 20px;
-}
-.topb:hover {
-  color: lightblue;
-  cursor:pointer;
-}
-/* Clear floats after the columns */
-.rowmain:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-.rowtop {
-  width:100%;
-  float: left;
-  height: 70px;
-    padding: 0px;
-    background-image: url("./images/backgroundtop.jpg");
-    background-repeat: repeat-x;
-}
-.rowtop:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .image1 {
   max-width: 200px;
   max-height: 150px;
 }
-.rowbottom {
-  width:100%;
-  margin-top: 20px;
-  float:inline-end;
-  
-    padding: 0px;
-}
-.rowbottom:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.fa {
-  font-size: 25px;
-  margin-top: 3px;
-}
-.botcolumna {
-    padding: 10px;
-    float:left;
-    margin-left: 4%;
-  margin-right: 4%;
-  width: 20%;
-}
-.botcolumnb {
-  width: 44%;
-      padding: 2px;
-    float:left;
-    max-height: 15px;
-  background-color: #6495ED;
-  text-align: center;
-  font-size: 12px;
-  color:white;
-}
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .columna  {
-    width: 25%;
-  }
-  .columnb {
-  	width:63%;
-  }
-  .columnc {
-    width: 25%;
-    margin-left: 10%;
 
+@media screen and (max-width: 900px) {
+
+  .divTexteClass {
+    font-size: 10px;
   }
-  .topa {
-    width:11%;
+  .divTexteVideoClass {
+    font-size: 10px;
   }
-  .topb {
-    width:8%;
-    font-size: 9px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .divTexteClass {
+    font-size: 10px;
   }
-  .logoimg {
-  position: relative;
-  width: 130px;
-  height: 100px;
+  .divTexteVideoClass {
+    font-size: 10px;
+  }
 }
-.searchbox {
-    width:60px;
-  height:20px;
-  margin-right: 0px;
-  visibility: hidden;
+@media screen and (max-width: 1200px) {
+  .divTexteClass {
+    font-size: 11px;
+  }
+  .divTexteVideoClass {
+    font-size: 11px;
+  }
+  .divImageClass{
+    width: 90%;
+  }
 }
+
+@media screen and (max-width: 1700px) {
+  .divTexteClass {
+    font-size: 12px;
+  }
+  .divTexteVideoClass {
+    font-size: 12px;
+  }
 }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .columna  {
-    width: 100%;
-    margin-left: 0%;
-  }
-  .columnb { width:100%; }
-  .columnc {
-    width:100%;
-    margin-left: 0%;
-  }
-}
+

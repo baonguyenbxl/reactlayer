@@ -1,7 +1,8 @@
 // eslint-disable-next-line
 import Youtube from './Youtube';
-
-
+import { Carousel } from 'react-responsive-carousel';
+import './Carousel.css';
+import React, { useState, useEffect } from 'react';
 // eslint-disable-next-line
 export function ImageTexte ( props )
 {
@@ -79,7 +80,7 @@ export const configs = {
     }
 }
 
-export function findPath ( ob, key, sep=">" )
+export function findPath ( ob, key, sep = ">" )
 {
     const path = [];
     const keyExists = ( obj ) =>
@@ -128,7 +129,7 @@ export function findPath ( ob, key, sep=">" )
     return path.join( sep );
 }
 
-export function ImageDiv(props)
+export function ImageDiv ( props )
 {
     // eslint-disable-next-line
     let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick() : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><img className={ ( props && props.valeurclass ) ? props.valeurclass : "" } src={ ( props && props.valeur ) ? props.valeur : "" } alt={ ( props && props.field ) ? props.field : "" } /></div> );
@@ -160,5 +161,36 @@ export function DateDiv ( props )
 {
     // eslint-disable-next-line
     let jsx = ( <div onClick={ () => { ( props && props.cbOnClick ) ? props.cbOnClick() : undefined } } className={ ( props && props.divclass ) ? props.divclass : "" }><input type="date" className={ ( props && props.valeurclass ) ? props.valeurclass : "" } value={ ( props && props.valeur ) ? props.valeur : "" } onChange={ ( e ) => { ( props && props.cbOnChange ) ? props.cbOnChange( e.target.value ) : undefined } } /></div> );
+    return jsx;
+}
+
+export function SliderVideos ( props )
+{
+    const [ jsx, setJsx ] = useState( <></> );
+    let rows = props.videos;
+
+    useEffect( () =>
+    {
+        let datas = ( rows && Object.prototype.toString.call( rows ) === '[object Array]' ) ? rows : [];
+        setJsx(
+            <Carousel
+                transitionTime={ 1000 }
+                interval={ 5000 }
+                autoPlay={ true }
+                infiniteLoop={ true }
+                showIndicators={ false }
+                showThumbs={ false }
+                showStatus={ false }
+                stopOnHover={ true }
+                centerMode={ true }
+                startOnLeave={ true }
+                selectedItem={ 0 }>
+                { datas.map( ( d, i ) => <div key={ i }><VideoTexte { ...d } /></div> ) }
+            </Carousel>,
+        );
+    },
+        [ rows, setJsx ],
+        undefined,
+    );
     return jsx;
 }
