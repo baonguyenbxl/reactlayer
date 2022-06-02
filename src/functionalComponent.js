@@ -1,23 +1,69 @@
 // eslint-disable-next-line
-const jsxs = {
-    "HFUHGJcgcgfcDYDYGFDKH": {
-        tag: "div",
-        className: "divclass",
-        children: {
-            "GDFIYTFUuigiFDTRSDTRDSTR": {
-                tag: "label",
-                className: "labelclass",
-                children: {},
-                callback: () => { },
-                text: "",
-                key: 0
+import Youtube from './Youtube';
+
+
+// eslint-disable-next-line
+export function ImageTexte ( props )
+{
+    let jsx = ( <></> );
+    // eslint-disable-next-line
+    let texte = ( <></> );
+
+    let image = ( <></> );
+    if ( props && props.url && props.url !== "" )
+    {
+        // eslint-disable-next-line
+        image = ( <div onClick={ () => { ( props && props.imageOnClick ) ? props.imageOnClick() : undefined } } className={ ( props && props.divImageClass ) ? props.divImageClass : "" }><img className={ ( props && props.imageClass ) ? props.imageClass : "" } src={ ( props && props.url ) ? props.url : "" } alt={ ( props && props.alt ) ? props.alt : "" } /></div> );
+        if ( props.texte && props.texte !== "" )
+        {
+            // eslint-disable-next-line
+            texte = ( props && props.texteLink ) ? ( <div className={ ( props && props.divTexteClass ) ? props.divTexteClass : "" }><a href={ props && props.texteLink } target={ ( props && props.texteTarget ) ? props.texteTarget : "" } className={ ( props && props.texteClass ) ? props.texteClass : "" }>{ ( props && props.texte ) ? props.texte : "" }</a></div> ) : ( <div onClick={ () => { ( props && props.texteOnClick ) ? props.texteOnClick() : undefined } } className={ ( props && props.divTexteClass ) ? props.divTexteClass : "" }><label className={ ( props && props.texteClass ) ? props.texteClass : "" }>{ ( props && props.texte ) ? props.texte : "" }</label></div> );
+            if ( props.texteLeft === true )
+            {
+                jsx = ( <div className={ ( props.containerClass ) ? props.containerClass : "" }>{ texte }{ image }</div> )
+            } else
+            {
+                jsx = ( <div className={ ( props.containerClass ) ? props.containerClass : "" }>{ image }{ texte }</div> )
             }
-        },
-        callback: () => { },
-        text: "",
-        key: 0
+        } else
+        {
+            jsx = ( <div className={ ( props.containerClass ) ? props.containerClass : "" }>{ image }</div> )
+        }
     }
+    return jsx;
 }
+// eslint-disable-next-line
+export function VideoTexte ( props )
+{
+    let jsx = ( <></> );
+    // eslint-disable-next-line
+    let texte = ( <></> );
+
+    let video = ( <></> );
+    if ( props && props.embedId && props.embedId !== "" )
+    {
+        // eslint-disable-next-line
+        video = ( <div className={ ( props && props.divVideoClass ) ? props.divVideoClass : "" }><Youtube embedId={ props.embedId } /></div> );
+        if ( props.texte && props.texte !== "" )
+        {
+            // eslint-disable-next-line
+            texte = ( props && props.texteLink ) ? ( <div className={ ( props && props.divTexteClass ) ? props.divTexteClass : "" }><a href={ props && props.texteLink } target={ ( props && props.texteTarget ) ? props.texteTarget : "" } className={ ( props && props.texteClass ) ? props.texteClass : "" }>{ ( props && props.texte ) ? props.texte : "" }</a></div> ) : ( <div onClick={ () => { ( props && props.texteOnClick ) ? props.texteOnClick() : undefined } } className={ ( props && props.divTexteClass ) ? props.divTexteClass : "" }><label className={ ( props && props.texteClass ) ? props.texteClass : "" }>{ ( props && props.texte ) ? props.texte : "" }</label></div> );
+            if ( props.texteLeft === true )
+            {
+                jsx = ( <div className={ ( props.containerClass ) ? props.containerClass : "" }>{ texte }{ video }</div> )
+            } else
+            {
+                jsx = ( <div className={ ( props.containerClass ) ? props.containerClass : "" }>{ video }{ texte }</div> )
+            }
+        } else
+        {
+            jsx = ( <div className={ ( props.containerClass ) ? props.containerClass : "" }>{ video }</div> )
+        }
+    }
+    return jsx;
+}
+// eslint-disable-next-line
+
 // eslint-disable-next-line
 export const configs = {
     separator: ">",
