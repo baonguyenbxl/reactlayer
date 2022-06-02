@@ -76,8 +76,9 @@ export function RowMain ()
 export function RowBottom ()
 {
     const bottoma = ( <div className="botcolumna"></div> ),
-        bottomb = ( <div className="botcolumnb" style={ { backgroundColor: "#FFFFFF" } }>Policies  | Conditions | Legacy | easign.io  <i style={ { fontSize: "12px" } } className="fa">&#xf1f9;</i> </div> ),
+        bottomb = ( <div className="botcolumnb">Policies  | Conditions | Legacy | easign.io  <i style={ { fontSize: "12px" } } className="fa">&#xf1f9;</i> </div> ),
         bottomc = ( <div className="botcolumna"></div> );
     const jsx = ( <div className="rowbottom">{ bottoma }{ bottomb }{ bottomc }</div> );
     return jsx;
 }
+
