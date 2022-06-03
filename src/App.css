@@ -79,6 +79,11 @@ width: 100%;
   .divTexteVideoClass {
     font-size: 10px;
   }
+  .imageClass {
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .divTexteClass {
@@ -89,6 +94,8 @@ width: 100%;
   }
   .divImageClass{
     width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -98,6 +105,11 @@ width: 100%;
   }
   .divTexteVideoClass {
     font-size: 12px;
+  }
+  .divImageClass{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 

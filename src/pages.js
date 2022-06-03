@@ -4,7 +4,8 @@ import './Columns.css';
 // eslint-disable-next-line
 import { ImageDiv, InputDiv, PasswordDiv, DateDiv, TexteDiv, ImageTexte, VideoTexte, SliderVideos } from './functionalComponent';
 // eslint-disable-next-line
-import {partya,partyb,columncenter} from './data.js'
+import { partya, partyb, columncenter } from './data.js'
+import {TechDiv} from './Tech'
 // eslint-disable-next-line
 export function AboutUs ( props )
 {
@@ -55,7 +56,7 @@ export function Developers ( props )
 // eslint-disable-next-line
 export function Home ( props )
 {
-    let jsx = ( <div className="columnb"><SliderVideos videos={ columncenter } /></div> )
+    let jsx = ( <div className="columnb"><SliderVideos videos={ columncenter } /><TechDiv /></div> )
     return jsx;
 }
 // eslint-disable-next-line
