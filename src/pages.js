@@ -62,7 +62,7 @@ export function Home ( props )
 // eslint-disable-next-line
 export function Demo ( props )
 {
-    let jsx = ( <div className="columnb">{ columncenter.map( ( d, i ) => <React.Fragment key={ i }><VideoTexte { ...d } /><br /><div style={ { height: "40px" } }></div></React.Fragment> ) }
+    let jsx = ( <div className="columnb">{ columncenter.map( ( d, i ) => <React.Fragment key={ i }><VideoTexte { ...d } /></React.Fragment> ) }
     </div> );
     return jsx;
 }

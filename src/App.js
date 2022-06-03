@@ -51,44 +51,6 @@ function App ()
     </PartyA.Provider>
   )
 
-
-
-
-
-
-  /*
-  const [ columna, setColumna ] = useState( <div className="columna">
-    <div style={ { marginTop: "40px" } }></div>
-    <TexteDiv valeur="Party A" /><br />
-    { partya.map( ( d, i ) => <React.Fragment key={ i } ><ImageTexte { ...d } /><br/><div style={ { height: "10px" } }></div></React.Fragment>)}
-  </div> );
-    // eslint-disable-next-line
-  const [ columnb, setColumnb ] = useState( <Home /> );
-    // eslint-disable-next-line
-  const [ columnc, setColumnc ] = useState( <></>);
-  // eslint-disable-next-line
-  const [ bottoma, setBottoma ] = useState( );
-  // eslint-disable-next-line
-  const [ bottomb, setBottomb ] = useState(  );
-  // eslint-disable-next-line
-  const [ bottomc, setBottomc ] = useState(  );
-  // eslint-disable-next-line
-  const [ rowTop, setRowTop ] = useState(  );
-  // eslint-disable-next-line
-  const [ rowMain, setRowMain ] = useState( <div className="rowmain">{ columna }{ columnb }{ columnc }</div> );
-  // eslint-disable-next-line
-  const [ rowBottom, setRowBottom ] = useState(  );
-
-
-  // eslint-disable-next-line
-  const [ jsx, setJsx ] = useState( <div className="maindiv">
-    { rowTop }
-    { rowMain }
-    { rowBottom }
-  </div> );
-  return jsx;
-
-  */
   return htmlx;
 }
 

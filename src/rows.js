@@ -4,7 +4,7 @@ import './Rows.css';
 // eslint-disable-next-line
 import React, { useState, useEffect, useContext, createContext } from 'react';
 // eslint-disable-next-line
-import { Home, AboutUs, OurVision, Developers, Contact, Partners, Demo, CV3D, Projects } from './pages.js';
+//import { Home, AboutUs, OurVision, Developers, Contact, Partners, Demo, CV3D, Projects } from './pages.js';
 // eslint-disable-next-line
 import { ColumnA, ColumnCenter, ColumnB } from './columns';
 // eslint-disable-next-line
