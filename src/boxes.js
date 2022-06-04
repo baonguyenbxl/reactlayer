@@ -48,7 +48,7 @@ export function CanvasVertical4 ( props )
         h = dh,
         p = dp;
     let jsx = ( <></> );
-    if ( props && props.arr && Object.prototype.toString.call( props.arr ) && props.arr.length === 5 )
+    if ( props && props.arr && Object.prototype.toString.call( props.arr ) && props.arr.length === 4 )
     {
         if ( props.w ) w = props.w;
         if ( props.h ) h = props.h;
@@ -80,7 +80,7 @@ export function CanvasVertical3 ( props )
         h = dh,
         p = dp;
     let jsx = ( <></> );
-    if ( props && props.arr && Object.prototype.toString.call( props.arr ) && props.arr.length === 5 )
+    if ( props && props.arr && Object.prototype.toString.call( props.arr ) && props.arr.length === 3 )
     {
         if ( props.w ) w = props.w;
         if ( props.h ) h = props.h;
@@ -146,7 +146,7 @@ export function CanvasHorizontal4 ( props )
         h = dh,
         p = dp;
     let jsx = ( <></> );
-    if ( props && props.arr && Object.prototype.toString.call( props.arr ) && props.arr.length === 5 )
+    if ( props && props.arr && Object.prototype.toString.call( props.arr ) && props.arr.length === 4 )
     {
         if ( props.w ) w = props.w;
         if ( props.h ) h = props.h;
@@ -179,7 +179,7 @@ export function CanvasHorizontal3 ( props )
         h = dh,
         p = dp;
     let jsx = ( <></> );
-    if ( props && props.arr && Object.prototype.toString.call( props.arr ) && props.arr.length === 5 )
+    if ( props && props.arr && Object.prototype.toString.call( props.arr ) && props.arr.length === 3 )
     {
         if ( props.w ) w = props.w;
         if ( props.h ) h = props.h;
