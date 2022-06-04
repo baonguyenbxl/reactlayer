@@ -9,7 +9,18 @@ import {TechDiv} from './Tech'
 // eslint-disable-next-line
 export function AboutUs ( props )
 {
-    let jsx = ( <div className="columnb"></div> )
+    let jsx = ( <div className="columnb">
+        <div className="centerbox">
+            
+        
+                    <p style={ { fontSize: "25px" } }>About Us</p><br />
+                    <p>We are a team of young developers with different profiles.</p>
+                    <p>What brings us together is the dynamism and passion for high-tech and precisely the blockchain.</p>
+                    <p>Aware of living in the digital age where its development is moving up a gear, we have decided to position ourselves on the front line and be actors in its evolution.</p>
+                    <p>The diversity of skills as well as the complicity of our members offers remarkable versatility in the web-oriented world.</p>                
+
+        </div>
+    </div> )
     return jsx;
 }
 // eslint-disable-next-line

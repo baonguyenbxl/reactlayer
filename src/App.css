@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size:12px;
+}
 /* Create four equal columns that floats next to each other */
 
 
@@ -48,8 +51,8 @@ padding: 0px;
 
 .logoimg {
   position: relative;
-  width: 200px;
-  height: 180px;
+  width: 220px;
+  height: 150px;
   align-self: flex-end;
 }
 .maindiv {

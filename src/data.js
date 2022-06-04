@@ -63,6 +63,37 @@ export const partya = [
 
 ]
 
+export const us = [
+    {
+        url: "https://res.cloudinary.com/hdiglobal/image/upload/f_auto,dpr_auto,q_auto,fl_progressive/w_500,h_500,x_189,y_0,c_crop/w_500,h_500,c_scale/hdiglobal/episerver/4431b088-3a52-4e8b-a2fa-33069c35efd5/hdi-online-services.jpg",
+        containerClass: "containerClass",
+        divImageClass: "divImageClass",
+        imageClass: "imageClass",
+        alt: "image1"
+    },
+    {
+        url: "https://tjn-blog-images.s3.amazonaws.com/wp-content/uploads/2015/10/20001806/top-5-coworkers-you-want-in-your-office.jpg",
+        containerClass: "containerClass",
+        divImageClass: "divImageClass",
+        imageClass: "imageClass",
+        alt: "image1"
+    },
+    {
+        url: "https://cdn.create.vista.com/api/media/medium/209987124/stock-photo-side-view-interracial-business-colleagues?token=",
+        containerClass: "containerClass",
+        divImageClass: "divImageClass",
+        imageClass: "imageClass",
+        alt: "image1"
+    },
+    {
+        url: "https://invao.org/wp-content/uploads/2020/03/invao-blogartikel-digitalisierung-1366x768px.jpg",
+        containerClass: "containerClass",
+        divImageClass: "divImageClass",
+        imageClass: "imageClass",
+        alt: "image1"
+    }
+]
+
 export const partyb = [
 
     {

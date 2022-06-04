@@ -10,6 +10,7 @@ import { ColumnA, ColumnCenter, ColumnB } from './columns';
 // eslint-disable-next-line
 import { PartyA, PartyB, PartyCenter, SetPartyA, SetPartyB, SetPartyCenter } from './App';
 // eslint-disable-next-line
+import Easign2 from './images/easign2.png';
 export function RowTop ()
 {
     const setPage = useContext( SetPartyCenter );
@@ -23,7 +24,7 @@ export function RowTop ()
             <div className="topa">
             </div>
             <div className="topc">
-                <img src={ Easign } alt="EASIGN.io" className="logoimg" />
+                <img src={ Easign2 } alt="EASIGN.io" className="logoimg" />
             </div>
             <div className="topb" onClick={ () => { changePage('home') } }>
                 <i className="fa">&#xf015;</i><br />
