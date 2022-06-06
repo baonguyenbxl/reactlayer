@@ -45,3 +45,81 @@ position: relative;
   width: 105%;
   height: 105%;
 }
+
+.verticalimgs {
+  width:170px;
+  display: block;
+position: relative;
+align-content: center;    
+}
+.axeb {
+  float:left;
+  width:170px;
+  display: block;
+position: relative;
+align-content: center;    
+
+
+}
+
+.verticalimg {
+  display:block;
+  width: 98%;
+  position: relative;
+margin-left: 1%;
+margin-right: 1%;
+border-radius: 15px;
+margin-top: 10px;  
+}
+
+.horizontalimgs {
+  width:90%;
+  margin-left:5%;
+  margin-right:5%;
+  height: 90px;
+  display: block;
+position: relative;
+align-content: center;
+}
+
+.horizontalimg {
+  display:block;
+  float:left;
+  width: 17%;
+  height: 100%;
+  position: relative;
+margin-left: 1%;
+margin-right: 1%;
+border-radius: 15px;
+
+}
+.horizontalimg:hover {
+  width: 20%;
+  height: 110%;
+}
+@media screen and (max-width: 600px) {
+.horizontalimgs {
+  max-height: 40px;
+}
+}
+@media screen and (max-width: 900px) {
+.horizontalimgs {
+  max-height: 45px;
+}
+}
+@media screen and (max-width: 1200px) {
+.horizontalimgs {
+  max-height: 50px;
+}
+}
+@media screen and (max-width: 1400px) {
+.horizontalimgs {
+  max-height: 55px;
+}
+}
+@media screen and (max-width: 1600px) {
+.horizontalimgs {
+  max-height: 65px;
+}
+}
+

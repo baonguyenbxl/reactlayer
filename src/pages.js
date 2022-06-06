@@ -5,8 +5,10 @@ import './Columns.css';
 import { ImageDiv, InputDiv, PasswordDiv, DateDiv, TexteDiv, ImageTexte, VideoTexte, SliderVideos } from './functionalComponent';
 // eslint-disable-next-line
 import { partya, partyb, columncenter } from './data.js'
+// eslint-disable-next-line
 import { TechDiv } from './Tech'
-import { CanvasVertical4, CanvasHorizontal5 } from './boxes.js'
+// eslint-disable-next-line
+import { CanvasVertical4, CanvasHorizontal5, ImagesHorizontal } from './boxes.js'
 import img1 from './images/pix/colleaguesa.jpeg'
 import img2 from './images/pix/colleaguesb.jpeg'
 import img3 from './images/pix/colleaguesc.jpg'
@@ -18,6 +20,9 @@ import pix3 from './images/pix/employmentc.jpg'
 import pix4 from './images/pix/blockchaine.jpg'
 import pix5 from './images/pix/laws.jpg'
 
+import pic1 from './images/pix/chatbot.jpg'
+import pic2 from './images/pix/ecommercea.jpg'
+import pic3 from './images/pix/employmentc.jpg'
 // eslint-disable-next-line
 export function AboutUs ( props )
 {
@@ -39,20 +44,27 @@ export function AboutUs ( props )
 // eslint-disable-next-line
 export function Projects ( props )
 {
+    const array = [ pic1, pic2, pic3 ];
     let jsx = ( <div className="columnb">
         <div className="centerbox">
-            <p style={ { fontSize: "25px" } }>Our Project</p><br />
-            <p>Awaiting for the European Commission give legal value to the signatures through the blockchain, we prepair to be one of the firstest decentralized  high-trust consensus  provider offering ability of tracing a subject history.</p>
-            <p>From real estate rental contract to employment contract, ... everything become so easy.</p>
-            <p>According to the RGPD laws, non-confidential information  can be stored on the blockchain since we only record ID and translate info with a local database</p>
-            <p>We use most powerfull web-oriented technologies like:</p>
-            <p>Frontend: ReactJs</p>
-            <p>Backend: NodeJs</p>
-            <p>Database: NoSQL (mongoDB Atlas)</p>
-            <p>APIs: ExpressJs, Socket.io</p>
-            <p>Blockchain: EOS network</p>
-            <p>Deployment: Amazon Web Services</p>
-            <p>... to offer scalability, stability, security, ... with highest bandwith waranty</p>
+            <div>
+                <p style={ { fontSize: "25px" } }>Our Projects</p><br />
+                <p>Awaiting for the European Commission give legal value to the signatures through the blockchain, we prepair to be one of the firstest decentralized  high-trust consensus  provider offering ability of tracing a subject history.</p>
+                <p>From real estate rental contract to employment contract, ... everything become so easy.</p>
+                <p>According to the RGPD laws, non-confidential information  can be stored on the blockchain since we only record ID and translate info with a local database</p>
+                <p>We use most powerfull web-oriented technologies like:</p>
+                <p>Frontend: ReactJs</p>
+                <p>Backend: NodeJs</p>
+                <p>Database: NoSQL (mongoDB Atlas)</p>
+                <p>APIs: ExpressJs, Socket.io</p>
+                <p>Blockchain: EOS network</p>
+                <p>Deployment: Amazon Web Services</p>
+                <p>... to offer scalability, stability, security, ... with highest bandwith waranty</p>
+
+            </div>
+
+            <ImagesHorizontal arr={ array } classMainDiv="horizontalimgs" classImgs="horizontalimg" />
+
         </div>
     </div> )
     return jsx;
@@ -74,10 +86,11 @@ export function OurVision ( props )
             <div>
                 <p style={ { fontSize: "25px" } }>Our Vision</p><br />
                 <p>We believe that the electoral voting system will resort in a near future to the blockchain technology</p>
-                <p>Also financials transactions will be realized through smart contracts.</p>
-                <p>Welcome to the High-Trust era</p>
-            </div>
-            <CanvasHorizontal5 arr={ array } w={ 700 } h={ 250 } />
+                <p>The banking sector will have to align with blockchain technology</p>
+                <p>E-commerce will be done through social media with bots leveraging blockchain networks</p>
+                <p>And the cryptocurrencies will be the next generation of our financial system</p>
+            </div><br />
+            <ImagesHorizontal arr={ array } classMainDiv="horizontalimgs" classImgs="horizontalimg" />
         </div>
     </div> )
     return jsx;
@@ -100,7 +113,7 @@ export function Partners ( props )
 export function Developers ( props )
 {
 
-    let jsx = ( <div className="columnb"></div> )
+    let jsx = ( <div className="columnb"><h2 style={ { textAlign: "center" } }>Coming soon...</h2></div> )
     return jsx;
 }
 // eslint-disable-next-line

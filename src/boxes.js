@@ -201,3 +201,16 @@ export function CanvasHorizontal3 ( props )
 
     return jsx;
 }
+
+
+export function ImagesHorizontal ( props )
+{
+    let jsx = ( <></> )
+    if ( props && props.arr && Object.prototype.toString.call( props.arr ) === '[object Array]' )
+    {
+        let classMainDiv = ( props.classMainDiv && Object.prototype.toString.call( props.classMainDiv ) === '[object String]' ) ? props.classMainDiv : "",
+            classImgs = ( props.classMainDiv && Object.prototype.toString.call( props.classImgs ) === '[object String]' ) ? props.classImgs : "";
+        jsx = ( <div className={ classMainDiv }>{ props.arr.map( ( d, i ) => <img className={ classImgs } src={ d } alt="" key={ i } /> ) }</div> )
+    }
+    return jsx;
+}

@@ -23,6 +23,14 @@
   background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(173, 221, 240));
 }
 
+.axea {
+  width: 60%;
+  float:left;
+  display:block;
+  position: relative;
+}
+
+
 .columnc {
     float: left;
   width: 16%;
