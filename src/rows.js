@@ -45,7 +45,7 @@ export function RowTop ()
             </div>
             <div className="topb" onClick={ () => { changePage( 'partners' ) } }>
                 <i className="fa">&#xf2b5;</i><br />
-                <label>Partners</label>
+                <label>Investors</label>
             </div>
             <div className="topb" onClick={ () => { changePage( 'developers' ) } }>
                 <i className="fa">&#xf079;</i><br />

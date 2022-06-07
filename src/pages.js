@@ -75,7 +75,8 @@ export function CV3D ( props )
 {
     let jsx = ( <div className="columnb">
         <div className="centerbox">
-            <div>
+            <div style={{marginRight:"10%"}}>
+            <p><h1>Our 3D Resume</h1></p>
                 <p>By using Ricardian contracts, we aim to offer high reliability by registering each transaction on the blockchain network in order to provide digital traceability.</p>
                 <p>Realizing the importance of digital in the evolution of our society, we are convinced that the blockchain will be the essential support for the development of future technology.</p>
                 <p></p>
@@ -89,8 +90,8 @@ export function CV3D ( props )
                 <p>- When a company is hiring, the matching event is raised, easign.io send queries to the blockchain to get transactions in order to draw the timeline equivalent candidate's professional experiences</p>
                 <p>- Easign.io proposes a list of candidate fulfilling requirements</p>
                 <p>- Company and user accept a new consensus then sign each other on our plateform</p>
-                <p>- Signature and contract's terms will be written into the blockchain network ...</p>
-                <p><h2>Just imagine that this concept can apply also to real estate rental, second-hand car, ...</h2></p>
+                <p>- Signatures and contract's terms will be written into the blockchain network ...</p>
+                <p><h2>We can imagine that this concept can apply also to real estate rental, second-hand car, ...</h2></p>
                 <p></p>
             </div>
         </div>
