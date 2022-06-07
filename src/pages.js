@@ -105,7 +105,28 @@ export function Contact ( props )
 // eslint-disable-next-line
 export function Partners ( props )
 {
-    let jsx = ( <div className="columnb"></div> )
+    let jsx = ( <div className="columnb">
+        <div className="centerbox">
+            <div>
+                <p>By using Ricardian contracts, we aim to offer high reliability by registering each transaction on the blockchain network in order to provide digital traceability.</p>
+                <p>Realizing the importance of digital in the evolution of our society, we are convinced that the blockchain will be the essential support for the development of future technology.</p>
+                <p></p>
+                <p><h1>Show cases - Proof-of-stake:</h1></p>
+                <p>- According to CNBC, LinkedIn would have generated no less than 3 billion dollars in advertising revenue during the year which ended on March 31. This is an increase of 60% compared to the previous year, a sign that the growth of the social network of professionals has not suffered from the health crisis , quite the contrary.</p>
+                <p>- Following the various studies, the cost of recruitment and the integration phase is estimated at between 15 and 25% of the gross annual salary of the person hired.</p>
+                <p>Where does the cost of recruitement come from?  From the screening step realized by headhunters or HR</p>
+                <p>What does LinkedIn offer beside connection between different parties?  Nothing else, they provide a matching based on user-trust information</p>
+                <p>What can Easign.io offer more than LinkedIn?  We offer greater precision for the matching process of candidate based on the profile blockchain-trust to avoid wrong candidate, what is the worst nightmare for companies</p>
+                <p><h1>Use cases - Proof-of-concept:</h1></p>
+                <p>- When a company is hiring, the matching event is raised, easign.io send queries to the blockchain to get transactions in order to draw the timeline equivalent candidate's professional experiences</p>
+                <p>- Easign.io proposes a list of candidate fulfilling requirements</p>
+                <p>- Company and user accept a new consensus then sign each other on our plateform</p>
+                <p>- Signature and contract's terms will be written into the blockchain network ...</p>
+                <p><h2>Just imagine that this concept can apply also to real estate rental, second-hand car, ...</h2></p>
+                <p></p>
+            </div>
+        </div>
+    </div> )
     return jsx;
 
 }
