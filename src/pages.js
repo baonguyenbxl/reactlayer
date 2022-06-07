@@ -13,13 +13,16 @@ import img1 from './images/pix/colleaguesa.jpeg'
 import img2 from './images/pix/colleaguesb.jpeg'
 import img3 from './images/pix/colleaguesc.jpg'
 import img4 from './images/pix/colleaguesd.jpeg'
-
+import pix0 from './images/pix/econtract.jpg'
 import pix1 from './images/pix/econtractb.jpg'
 import pix2 from './images/pix/ecommercea.jpg'
 import pix3 from './images/pix/employmentc.jpg'
 import pix4 from './images/pix/blockchaine.jpg'
 import pix5 from './images/pix/laws.jpg'
-
+import pix6 from './images/pix/blockchaina.jpg'
+import pix7 from './images/pix/employmenta.jpg'
+import pix8 from './images/pix/laws.jpg'
+import pix9 from './images/pix/nftb.jpg'
 import pic1 from './images/pix/chatbot.jpg'
 import pic2 from './images/pix/ecommercea.jpg'
 import pic3 from './images/pix/employmentc.jpg'
@@ -73,20 +76,22 @@ export function Projects ( props )
 // eslint-disable-next-line
 export function CV3D ( props )
 {
+    let array = [pix6,pix0,pix7,pix8,pix9]
     let jsx = ( <div className="columnb">
         <div className="centerbox">
-            <div style={{marginRight:"10%"}}>
+            <div style={{marginRight:"15%"}}>
             <p><h1>Our 3D Resume</h1></p>
-                <p>By using Ricardian contracts, we aim to offer high reliability by registering each transaction on the blockchain network in order to provide digital traceability.</p>
                 <p>Realizing the importance of digital in the evolution of our society, we are convinced that the blockchain will be the essential support for the development of future technology.</p>
+                <p>By using Ricardian contracts, we aim to offer high reliability by registering each transaction on the blockchain network in order to provide digital traceability.</p>
                 <p></p>
-                <p><h1>Show cases - Proof-of-stake:</h1></p>
+                <p><h1>Show cases - Proof of stake:</h1></p>
                 <p>- According to CNBC, LinkedIn would have generated no less than 3 billion dollars in advertising revenue during the year which ended on March 31. This is an increase of 60% compared to the previous year, a sign that the growth of the social network of professionals has not suffered from the health crisis , quite the contrary.</p>
                 <p>- Following the various studies, the cost of recruitment and the integration phase is estimated at between 15 and 25% of the gross annual salary of the person hired.</p>
                 <p>Where does the cost of recruitement come from?  From the screening step realized by headhunters or HR</p>
                 <p>What does LinkedIn offer beside connection between different parties?  Nothing else, they provide a matching based on user-trust information</p>
                 <p>What can Easign.io offer more than LinkedIn?  We offer greater precision for the matching process of candidate based on the profile blockchain-trust to avoid wrong candidate, what is the worst nightmare for companies</p>
-                <p><h1>Use cases - Proof-of-concept:</h1></p>
+                <ImagesHorizontal arr={ array } classMainDiv="horizontalimgs" classImgs="horizontalimg" />
+                <p><h1>Use cases - Proof of concept:</h1></p>
                 <p>- When a company is hiring, the matching event is raised, easign.io send queries to the blockchain to get transactions in order to draw the timeline equivalent candidate's professional experiences</p>
                 <p>- Easign.io proposes a list of candidate fulfilling requirements</p>
                 <p>- Company and user accept a new consensus then sign each other on our plateform</p>
