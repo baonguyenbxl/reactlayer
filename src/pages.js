@@ -32,7 +32,7 @@ export function AboutUs ( props )
     const array = [ img1, img2, img3, img4 ]
     let jsx = ( <div className="columnb">
         <div className="centerbox">
-            <div>
+            <div style={ { marginRight: "15%" } }>
                 <p style={ { fontSize: "25px" } }>About Us</p><br />
                 <p>We are a team of young developers with different profiles.</p>
                 <p>What brings us together is the dynamism and passion for high-tech and precisely the blockchain.</p>
@@ -50,7 +50,7 @@ export function Projects ( props )
     const array = [ pic1, pic2, pic3 ];
     let jsx = ( <div className="columnb">
         <div className="centerbox">
-            <div>
+            <div style={ { marginRight: "15%" } }>
                 <p style={ { fontSize: "25px" } }>Our Projects</p><br />
                 <p>Awaiting for the European Commission give legal value to the signatures through the blockchain, we prepair to be one of the firstest decentralized  high-trust consensus  provider offering ability of tracing a subject history.</p>
                 <p>From real estate rental contract to employment contract, ... everything become so easy.</p>
@@ -110,7 +110,7 @@ export function OurVision ( props )
     const array = [ pix1, pix2, pix3, pix4, pix5 ]
     let jsx = ( <div className="columnb">
         <div className="centerbox">
-            <div>
+            <div style={ { marginRight: "15%" } }>
                 <p style={ { fontSize: "25px" } }>Our Vision</p><br />
                 <p>We believe that the electoral voting system will resort in a near future to the blockchain technology</p>
                 <p>The banking sector will have to align with blockchain technology</p>
@@ -134,7 +134,12 @@ export function Partners ( props )
 {
     let jsx = ( <div className="columnb">
         <div className="centerbox">
-            
+            <div style={ { marginRight: "15%" } }>
+                <p><h2>We are currently looking for funds</h2></p>
+                <p><h3>Let's talk about finance</h3></p>
+                <p>- Salary expense for team of 5 developers for 6 months: 414k</p>
+                
+            </div>
         </div>
     </div> )
     return jsx;
