@@ -55,11 +55,17 @@ export function Projects ( props )
                 <p>Awaiting for the European Commission give legal value to the signatures through the blockchain, we prepair to be one of the firstest decentralized  high-trust consensus  provider offering ability of tracing a subject history.</p>
                 <p>From real estate rental contract to employment contract, ... everything become so easy.</p>
                 <p>According to the RGPD laws, non-confidential information  can be stored on the blockchain since we only record ID and translate info with a local database</p>
+                <p><h2>Specifications:</h2></p>
+                <p>In order to offer an unique product, the project will be broken down into three stages:</p>
+                <p>- First: platform dedicated to signing contracts online through the blockchain</p>
+                <p>- Second: professional network platform by integrating the first project</p>
+                <p>- Third: training certificate publisher on the blockchain network using IPFS</p>
+                <p></p>
                 <p>We use most powerfull web-oriented technologies like:</p>
                 <p>Frontend: ReactJs</p>
                 <p>Backend: NodeJs</p>
                 <p>Database: NoSQL (mongoDB Atlas)</p>
-                <p>APIs: ExpressJs, Socket.io</p>
+                <p>APIs: Express, Socket.io, GraphQL</p>
                 <p>Blockchain: EOS network</p>
                 <p>Deployment: Amazon Web Services</p>
                 <p>... to offer scalability, stability, security, ... with highest bandwith waranty</p>
@@ -96,7 +102,7 @@ export function CV3D ( props )
                 <p>- Easign.io proposes a list of candidate fulfilling requirements</p>
                 <p>- Company and user accept a new consensus then sign each other on our plateform</p>
                 <p>- Signatures and contract's terms will be written into the blockchain network ...</p>
-                <p><h2>We can imagine that this concept can apply also to real estate rental, second-hand car, ...</h2></p>
+                <p><h2>We can imagine that this concept can apply also to real estate rental, second-hand cars, ...</h2></p>
                 <p></p>
             </div>
         </div>
@@ -135,10 +141,29 @@ export function Partners ( props )
     let jsx = ( <div className="columnb">
         <div className="centerbox">
             <div style={ { marginRight: "15%" } }>
-                <p><h2>We are currently looking for funds</h2></p>
-                <p><h3>Let's talk about finance</h3></p>
-                <p>- Salary expense for team of 5 developers for 6 months: 414k</p>
-                
+                <p><h2>What are our strategies?</h2></p>
+                <p><h3>- First year - test phase:</h3></p>
+                <p>Free access for companies and recruiters but monthly fee's contract would be signed for the second year</p>
+                <p>Always free access for users</p>
+                <p>Principal incomes through ads and public investment by our crypto token</p>
+                <p>Collect bugs and fix them</p>
+                <p>Data feeding thanks to free access</p>
+                <p><h3>- Second year - Marketing and Commercial:</h3></p>
+                <p>According to our forecasts, this project would be able from the second year, at least to be self-financing, at most already generate the profits to make the initial investment profitable.</p>
+                <p>The sources of revenue will come from subscriptions and advertising as well as the extra services that we will have developed in the meantime.</p>
+                <p><h2>Expenses evaluated?</h2></p>
+                <p>- Unique expenses:</p>
+                <p>Set up cost: 10k</p>
+                <p>Equipment and infrastructure: 30k</p>
+                <p>- Monthly expenses:</p>
+                <p>Salary: 70k</p>
+                <p>Office and charges: 5k</p>
+                <p>Deployment: 2k</p>
+                <p>Marketing: 5k</p>
+                <p>Total: 82k</p>
+                <p><h2>Monthly incomes target?</h2></p>
+                <p>From companies with various types of contract (100): 300k</p>
+                <p>From advertising and extra services: 100k</p>
             </div>
         </div>
     </div> )
