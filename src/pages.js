@@ -82,11 +82,11 @@ export function Projects ( props )
 // eslint-disable-next-line
 export function CV3D ( props )
 {
-    let array = [pix6,pix0,pix7,pix8,pix9]
+    let array = [ pix6, pix0, pix7, pix8, pix9 ]
     let jsx = ( <div className="columnb">
         <div className="centerbox">
-            <div style={{marginRight:"15%"}}>
-            <p><h1>Our 3D Resume</h1></p>
+            <div style={ { marginRight: "15%" } }>
+                <p><h1>Our 3D Resume</h1></p>
                 <p>Realizing the importance of digital in the evolution of our society, we are convinced that the blockchain will be the essential support for the development of future technology.</p>
                 <p>By using Ricardian contracts, we aim to offer high reliability by registering each transaction on the blockchain network in order to provide digital traceability.</p>
                 <p></p>
@@ -132,7 +132,15 @@ export function OurVision ( props )
 // eslint-disable-next-line
 export function Contact ( props )
 {
-    let jsx = ( <div className="columnb"><div className="centerbox"><p style={ { fontSize: "25px" } }>Contact Us</p><br /><p><i style={ { fontSize: "25px" } } className="fas">&#xf2b6;</i> Email: easign.invest@gmail.com</p><p><i style={ { fontSize: "25px" } } className="fas">&#xf098;</i>Tel: 0470 34 81 13</p><p>Address: 10 rue Middelbourg - 1170 Brussels</p><div><iframe title="address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.819189366661!2d4.415606416004985!3d50.79745937952485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dadbc1b449a5%3A0xc967c95833861d8!2sRue%20Middelbourg%2010%2C%201170%20Watermael-Boitsfort!5e0!3m2!1sfr!2sbe!4v1654217428188!5m2!1sfr!2sbe" style={ { width: "100%", border: 0 } } allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></div> )
+    let jsx = ( <div className="columnb">
+        <div className="centerbox">
+            <p style={ { fontSize: "25px" } }>Contact Us</p><br />
+            <p><i style={ { fontSize: "25px" } } className="fas">&#xf2b6;</i> Email: easign.invest@gmail.com</p>
+            <p><i style={ { fontSize: "25px" } } className="fas">&#xf098;</i>Tel: 0470 34 81 13</p>
+            <p>Address: 10 rue Middelbourg - 1170 Brussels</p>
+            <div><iframe title="address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.819189366661!2d4.415606416004985!3d50.79745937952485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dadbc1b449a5%3A0xc967c95833861d8!2sRue%20Middelbourg%2010%2C%201170%20Watermael-Boitsfort!5e0!3m2!1sfr!2sbe!4v1654217428188!5m2!1sfr!2sbe" style={ { width: "100%", border: 0 } } allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+    </div> )
     return jsx;
 }
 // eslint-disable-next-line
