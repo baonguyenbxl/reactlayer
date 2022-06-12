@@ -132,7 +132,7 @@ export function OurVision ( props )
 // eslint-disable-next-line
 export function Contact ( props )
 {
-    let jsx = ( <div className="columnb"><div className="centerbox"><p style={ { fontSize: "25px" } }>Contact Us</p><br /><p>Email: nguyenhuynhtrongbao@gmail.com</p><p>Tel: 0470 34 81 13</p><p>Address: 10 rue Middelbourg - 1170 Brussels</p><div><iframe title="address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.819189366661!2d4.415606416004985!3d50.79745937952485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dadbc1b449a5%3A0xc967c95833861d8!2sRue%20Middelbourg%2010%2C%201170%20Watermael-Boitsfort!5e0!3m2!1sfr!2sbe!4v1654217428188!5m2!1sfr!2sbe" style={ { width: "100%", border: 0 } } allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></div> )
+    let jsx = ( <div className="columnb"><div className="centerbox"><p style={ { fontSize: "25px" } }>Contact Us</p><br /><p><i style='font-size:24px' class='fas'>&#xf2b6;</i> Email: easign.invest@gmail.com</p><p><i style='font-size:24px' class='fas'>&#xf098;</i>Tel: 0470 34 81 13</p><p>Address: 10 rue Middelbourg - 1170 Brussels</p><div><iframe title="address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.819189366661!2d4.415606416004985!3d50.79745937952485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dadbc1b449a5%3A0xc967c95833861d8!2sRue%20Middelbourg%2010%2C%201170%20Watermael-Boitsfort!5e0!3m2!1sfr!2sbe!4v1654217428188!5m2!1sfr!2sbe" style={ { width: "100%", border: 0 } } allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></div> )
     return jsx;
 }
 // eslint-disable-next-line
